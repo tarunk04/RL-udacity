@@ -41,6 +41,7 @@ def interact(env, agent, num_episodes=20000, window=100):
             samp_reward += reward
             # update the state (s <- s') to next time step
             state = next_state
+            # env.render(mode='human')
             if done:
                 # save final sampled reward
                 samp_rewards.append(samp_reward)
